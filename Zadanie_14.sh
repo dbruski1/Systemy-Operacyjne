@@ -29,3 +29,21 @@ touch /home/us3/kat1a/plik1a
 
 mkdir /home/student/archiwum
 mkdir /home/student/rozpakowane
+
+cd /home/
+
+tar -cf archiwum_us1 us1
+mv archiwum_us1 /home/student/archiwum
+
+tar -cf archiwum_us2 us2
+mv archiwum_us2 /home/student/archiwum
+
+tar -cf archiwum_us3 us3
+mv archiwum_us3 /home/student/archiwum
+
+cd /home/student
+tar -xf /home/student/archiwum/archiwum_us1
+tar -xf /home/student/archiwum/archiwum_us2
+tar -xf /home/student/archiwum/archiwum_us3
+
+tree /home/student
